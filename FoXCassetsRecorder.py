@@ -116,6 +116,9 @@ if __name__ == "__main__": #иначе пизда multiprocessing
                 TEXTUREMODE = True
                 TextureMode = sys.argv[aa + 1]
                 aa = aa + 1
+            if sys.argv[aa].lower() == "-countofstickers":
+                COUNTOFSTICKERS = sys.argv[aa + 1]
+                aa = aa + 1
 
     if LOGGING == True:
         if os.path.isdir("logs"):
@@ -433,7 +436,7 @@ if __name__ == "__main__": #иначе пизда multiprocessing
 
                         while True:
                             font = ImageFont.truetype('datapack\\font.ttf', fontsize)
-                            if font.getbbox(text)[2] < 540 - 60 and font.getbbox(text)[3] < 90 - 54:
+                            if font.getbbox(text)[2] < 540 - 80 and font.getbbox(text)[3] < 90 - 54:
                                 fontsize = fontsize + 1
                             else:
                                 break
@@ -442,7 +445,7 @@ if __name__ == "__main__": #иначе пизда multiprocessing
                         dr = ImageDraw.Draw(text_image)
                         dr.text((0, 0), text, (0, 0, 0), font=font, fontsize=fontsize)
                         text_image = text_image.transpose(Image.FLIP_LEFT_RIGHT)
-                        img.paste(text_image, (60, 54), text_image)
+                        img.paste(text_image, (80, 54), text_image)
 
                         if len(stickerimage) > 0:
                             for a in listofstickers:
@@ -512,7 +515,7 @@ if __name__ == "__main__": #иначе пизда multiprocessing
                     fontsize = 1
                     while True:
                         font = ImageFont.truetype('datapack\\font.ttf', fontsize)
-                        if font.getbbox(text)[2] < 540 - 60 and font.getbbox(text)[3] < 90 - 54:
+                        if font.getbbox(text)[2] < 540 - 80 and font.getbbox(text)[3] < 90 - 54:
                             fontsize = fontsize + 1
                         else:
                             if fontsize != 1:
@@ -523,7 +526,7 @@ if __name__ == "__main__": #иначе пизда multiprocessing
                     dr = ImageDraw.Draw(text_image)
                     dr.text((0, 0), text, (0, 0, 0), font=font, fontsize=fontsize)
                     text_image = text_image.transpose(Image.FLIP_LEFT_RIGHT)
-                    img.paste(text_image, (60, 54), text_image)
+                    img.paste(text_image, (80, 54), text_image)
                     img.save(f'{syntaxofsymbols(filename)}.png')
 
                     os.chdir(f"{dayztooldir}\\Bin\\ImageToPAA")
