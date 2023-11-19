@@ -27,7 +27,7 @@ WORKDIR = os.path.abspath(__file__).replace(os.path.basename(__file__), '')
 ARTISTFOLDERS = False
 PAUSEBEFOREPBO = False
 TEXTUREMODE = False
-COUNTOFSTICKERS = 6
+COUNTOFSTICKERS = 1
 
 def debug(text, status = 0):
     global DEBUG
