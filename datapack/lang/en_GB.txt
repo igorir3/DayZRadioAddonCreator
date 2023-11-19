@@ -1,0 +1,38 @@
+Addon name
+The name contains special characters or has an incorrect format.
+has already been created,
+select another name or press ENTER to re-create the addon with the same name.
+The input folder is empty! Close the programme or place the files in the folder and press Enter
+There are still no files in the folder, try again!
+Input mode
+1. automatic
+2. Manual
+3. Data from mp3
+4. #############
+Input mode
+Wrong input mode selected! Auto mode is set
+Texture generator mode
+1. Switch off the texture generator
+2. Switch texture generator on
+Incorrect texture mode! Texture generator is switched off
+Texture generation cannot be used with the second input mode
+Creating an import
+Creating a file structure
+File
+.mp3 has no metadata, if you continue, this file will be skipped
+End the programme [Y/n]
+No mp3 file found! You can terminate the programme, otherwise the auto input mode will be set!
+Waiting for the conversion to complete...
+Done!
+Creating the CfgVechiles class
+Creating the CfgSoundSets class
+Creating CfgSoundShaders class
+Creating file types.xml
+Packaging
+in PBO
+Press ENTER to exit!
+Name
+Description
+Cassette
+Album Composition
+Auto input

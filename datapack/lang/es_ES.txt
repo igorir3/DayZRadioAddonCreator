@@ -1,0 +1,38 @@
+Nombre del addon
+El nombre tiene caracteres especiales o tiene un formato incorrecto.
+ya creado,
+elija un nombre diferente o pulse ENTER para volver a crear el addon con el mismo nombre
+¡La carpeta de entrada está vacía! Cierre el programa, o ponga los archivos en una carpeta y pulse Enter
+Todavía no hay archivos en la carpeta, ¡inténtelo de nuevo!
+Modo de introducción de información
+1. Automático
+2. Manual
+3. Datos de mp3
+4. #############
+Modo de entrada
+El modo de entrada es incorrecto. El modo automático está ajustado
+Modo generador de texturas
+1. Generador de texturas desactivado
+2. Activado Generador de texturas
+El modo de textura es incorrecto El generador de texturas está desactivado
+La generación de texturas no puede utilizarse con el 2º modo de entrada
+Creación de importaciones
+Creación de una estructura de archivos
+El archivo
+.mp3 no tiene metadatos, si continúa, este archivo será omitido
+Finalizar el programa [S/N]
+¡No se ha encontrado ningún archivo mp3! Puede finalizar el programa o se activará el modo de entrada automática.
+Esperando a que finalice la conversión...
+¡Listo!
+Creando clase CfgVechiles
+Creando clase CfgSoundSets
+Creando clase CfgSoundShaders
+Creando types.xml
+Empaquetando
+en PBO
+Pulse ENTER para salir
+Nombre
+Descripción
+Cassette
+La canción del álbum
+Entrada automática
