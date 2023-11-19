@@ -302,7 +302,7 @@ if __name__ == "__main__": #иначе пизда multiprocessing
             print(langpacket[14])
             print(langpacket[15])
             print(" ")
-            TextureMode = str(input(f"{langpacket[11]} >>> "))
+            TextureMode = str(input(f"{langpacket[13]} >>> "))
         if TextureMode != "1" and TextureMode != "2":
             print(langpacket[16])
             TextureMode = "1"
@@ -406,23 +406,25 @@ if __name__ == "__main__": #иначе пизда multiprocessing
                     #texture module/
                     if TextureMode == "2":
                         stickerimage = audiofile.tag.images
-                        listofstickers = []
-                        for x in stickerimage:
-                            img = Image.open(BytesIO(x.image_data))
-                            enhancer = ImageEnhance.Brightness(img)
-                            img = enhancer.enhance(1.5)
-                            img = img.filter(ImageFilter.MedianFilter(size=1))
-                            img = img.filter(ImageFilter.SMOOTH)
+                        debug(f"len(stickerimage) == {len(stickerimage)}")
+                        if len(stickerimage) > 0:
+                            listofstickers = []
+                            for x in stickerimage:
+                                img = Image.open(BytesIO(x.image_data))
+                                enhancer = ImageEnhance.Brightness(img)
+                                img = enhancer.enhance(1.5)
+                                img = img.filter(ImageFilter.MedianFilter(size=1))
+                                img = img.filter(ImageFilter.SMOOTH)
 
-                            listofstickers.append(img)
-                        while True:
-                            if len(listofstickers) > COUNTOFSTICKERS:
-                                listofstickers.pop()
-                            elif len(listofstickers) < COUNTOFSTICKERS:
-                                listofstickers.append(listofstickers[len(listofstickers) - 1])
-                            else:
-                                break
-
+                                listofstickers.append(img)
+                            while True:
+                                if len(listofstickers) > COUNTOFSTICKERS:
+                                    listofstickers.pop()
+                                elif len(listofstickers) < COUNTOFSTICKERS:
+                                    listofstickers.append(listofstickers[len(listofstickers) - 1])
+                                else:
+                                    break
+    
                         img = Image.open("datapack\\blank.png")
                         draw = ImageDraw.Draw(img)
                         # font = ImageFont.truetype(<font-file>, <font-size>)
@@ -442,14 +444,15 @@ if __name__ == "__main__": #иначе пизда multiprocessing
                         text_image = text_image.transpose(Image.FLIP_LEFT_RIGHT)
                         img.paste(text_image, (60, 54), text_image)
 
-                        for a in listofstickers:
-                            a = a.resize((100, 100))
-                            a = a.transpose(Image.FLIP_LEFT_RIGHT)
-                            mask_im = Image.new("L", a.size, 0)
-                            draw = ImageDraw.Draw(mask_im)
-                            draw.ellipse((0, 0, 100, 100), fill=255)
-                            img.paste(a.rotate(random.randint(0, 120) - 60),
-                                      (random.randint(0, 400), random.randint(100, 290 - 90)), mask_im)
+                        if len(stickerimage) > 0:
+                            for a in listofstickers:
+                                a = a.resize((100, 100))
+                                a = a.transpose(Image.FLIP_LEFT_RIGHT)
+                                mask_im = Image.new("L", a.size, 0)
+                                draw = ImageDraw.Draw(mask_im)
+                                draw.ellipse((0, 0, 100, 100), fill=255)
+                                img.paste(a.rotate(random.randint(0, 120) - 60),
+                                          (random.randint(0, 400), random.randint(100, 290 - 90)), mask_im)
                         img.save(f'{syntaxofsymbols(filename)}.png')
 
                         os.chdir(f"{dayztooldir}\\Bin\\ImageToPAA")
@@ -489,17 +492,48 @@ if __name__ == "__main__": #иначе пизда multiprocessing
                 debug(f"filename = {filename}", 0)
                 oggfiles.append(filename)
                 debug(f"oggfiles = {oggfiles}", 0)
-                if not(os.path.exists(f"input\\{syntaxofsymbols(filename)}.ogg")):
-                    os.rename(f"input\\{oldfilename}.ogg", f"input\\{syntaxofsymbols(filename)}.ogg")
-                else:
-                    debug(f"Duplicate file found {syntaxofsymbols(filename)}.ogg", 1)
-                    os.remove(f"input\\{oldfilename}.ogg")
+                if syntaxofsymbols(filename) != oldfilename:
+                    if not(os.path.exists(f"input\\{syntaxofsymbols(filename)}.ogg")):
+                        os.rename(f"input\\{oldfilename}.ogg", f"input\\{syntaxofsymbols(filename)}.ogg")
+                    else:
+                        debug(f"Duplicate file found {syntaxofsymbols(filename)}.ogg", 1)
+                        os.remove(f"input\\{oldfilename}.ogg")
                 if os.path.isfile(f"output\\{NameOfAddon}\\Cassettes\\sounds\\{syntaxofsymbols(filename)}.ogg") == False:
                     shutil.move(f"input\\{syntaxofsymbols(filename)}.ogg", f"output\\{NameOfAddon}\\Cassettes\\sounds\\")
                 else:
                     debug(f'os.path.isfile(f"output\\{NameOfAddon}\\Cassettes\\sounds\\{syntaxofsymbols(filename)}.ogg") == True', 2)
                     os.remove(f"input\\{syntaxofsymbols(filename)}.ogg")
                     error = True
+                if TextureMode == "2":
+                    img = Image.open("datapack\\blank.png")
+                    draw = ImageDraw.Draw(img)
+                    # font = ImageFont.truetype(<font-file>, <font-size>)
+                    text = filename
+                    fontsize = 1
+                    while True:
+                        font = ImageFont.truetype('datapack\\font.ttf', fontsize)
+                        if font.getbbox(text)[2] < 540 - 60 and font.getbbox(text)[3] < 90 - 54:
+                            fontsize = fontsize + 1
+                        else:
+                            if fontsize != 1:
+                                fontsize = fontsize - 1
+                            break
+                    # draw.text((x, y),"Sample Text",(r,g,b))
+                    text_image = Image.new('RGBA', (476, 36), (0, 0, 0, 0))
+                    dr = ImageDraw.Draw(text_image)
+                    dr.text((0, 0), text, (0, 0, 0), font=font, fontsize=fontsize)
+                    text_image = text_image.transpose(Image.FLIP_LEFT_RIGHT)
+                    img.paste(text_image, (60, 54), text_image)
+                    img.save(f'{syntaxofsymbols(filename)}.png')
+
+                    os.chdir(f"{dayztooldir}\\Bin\\ImageToPAA")
+                    os.system(
+                        f"ImageToPAA.exe {WORKDIR}\\{syntaxofsymbols(filename)}.png {WORKDIR}\\output\\{NameOfAddon}\\Cassettes\\textures\\{syntaxofsymbols(filename)}.paa")
+                    os.chdir(WORKDIR)
+                    if os.path.exists(f'{syntaxofsymbols(filename)}.png'):
+                        os.remove(f'{syntaxofsymbols(filename)}.png')
+
+                    ListOfTextures.append(f"{NameOfAddon}\\Cassettes\\textures\\{syntaxofsymbols(filename)}.paa")
 
             if len(fordeleatefile) > 0:
                 for x in fordeleatefile:
@@ -510,9 +544,10 @@ if __name__ == "__main__": #иначе пизда multiprocessing
             dp.join()
         print(langpacket[25])
         print(langpacket[26])
-        if len(oggfiles) != len(ListOfTextures):
-            debug("CRITICAL ERROR! len(oggfiles) != len(ListOfTextures)")
-            raise SystemExit
+        if TextureMode == "2":
+            if len(oggfiles) != len(ListOfTextures):
+                debug("CRITICAL ERROR! len(oggfiles) != len(ListOfTextures)")
+                raise SystemExit
         scriptfile.write('class CfgVehicles {\n' )
         scriptfile.write('    class Cassette;\n' )
         if Mode == "1":
