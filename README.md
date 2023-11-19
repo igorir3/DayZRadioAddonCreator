@@ -9,14 +9,14 @@
 Для использования программы требуется DayZTools, а также ffmpeg, но инструкция по его установке уже написана.
 
 ###**Процесс установки**
-Шаг 1: Зайдите на сайт https://github.com/igorir3/DayZRadioAddonCreator и скачайте Zip-файл.__
-Шаг 2: Распакуйте папку DayZRadioAddonCreator-main и удалите **YukiOldCassetsRecorder.py** и **YukiInit.bat**, чтобы остались только FoXy файлы.__
-Шаг 3: Зайдите на сайт https://github.com/BtbN/FFmpeg-Builds/releases и скачайте **ffmpeg-n4.4-latest-win64-gpl-4.4.zip**.__
-Шаг 4: **Извлеките папку ffmpeg-n4.4-latest-win64-gpl-4.4\bin** в папку **DayZRadioAddonCreator-main**__
-Шаг 5: Скачайте и установите **Python 3.11** из **Microsoft Store**.__
-Шаг 6: Щелкните правой кнопкой мыши на папке **DayZRadioAddonCreator-main** и откройте ее в терминале.__
-Шаг 7: Используйте следующую команду для установки некоторых пакетов python (это может занять некоторое время)__
-```pip install transliterate==1.10.2 rich==13.6.0 tqdm==4.66.1 pydub==0.25.1 Pillow==10.0.1 eyed3==0.9.7```.__
+Шаг 1: Зайдите на сайт https://github.com/igorir3/DayZRadioAddonCreator и скачайте Zip-файл.\
+Шаг 2: Распакуйте папку DayZRadioAddonCreator-main и удалите **YukiOldCassetsRecorder.py** и **YukiInit.bat**, чтобы остались только FoXy файлы.\
+Шаг 3: Зайдите на сайт https://github.com/BtbN/FFmpeg-Builds/releases и скачайте **ffmpeg-n4.4-latest-win64-gpl-4.4.zip**.\
+Шаг 4: **Извлеките папку ffmpeg-n4.4-latest-win64-gpl-4.4\bin** в папку **DayZRadioAddonCreator-main**\
+Шаг 5: Скачайте и установите **Python 3.11** из **Microsoft Store**.\
+Шаг 6: Щелкните правой кнопкой мыши на папке **DayZRadioAddonCreator-main** и откройте ее в терминале.\
+Шаг 7: Используйте следующую команду для установки некоторых пакетов python (это может занять некоторое время)\
+```pip install transliterate==1.10.2 rich==13.6.0 tqdm==4.66.1 pydub==0.25.1 Pillow==10.0.1 eyed3==0.9.7```.\
 
 ###**Процесс создания мода**
 Шаг 8: Запустите файл **FoxInit.bat**
