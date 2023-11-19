@@ -36,3 +36,4 @@ Description
 Cassette
 The song of the album
 Automatic input
+, under the authorship
