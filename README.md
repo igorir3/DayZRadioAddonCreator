@@ -51,6 +51,8 @@
 `-texturemode [РежимГенератораТекстур]` - ввод режима работы текстурного генератора\
 `-countofstickers [Кол-воСтикеров]` - ввод кол-ва стикеров на одну кассету (стикеры создаются на основе изображений из meta данных mp3 файлов, если нет изображений, то и стикеров не будет)\
 
+### Поддержка
+Я работаю над этим и другими проектами буквально за бесплатно, а выжить на зарплату в 10 000, когда ты студент-мехатроник праблемотично, поэтому буду рад, если вы поддержите меня: **https://boosty.to/igorir3**
 
 ## [ENG]
 This is a program for auto creation of addons for mods from Yuki and FoX that add radio.
@@ -102,3 +104,6 @@ If you want to change the font, replace the **datapack/font.tff** file with your
 `-pausebeforepbo` - allows you to pause program execution before packing into .pbo, can be used to modify or check files before packing them\
 `-texturemode [TextureGeneratorMode]` - input texture generator mode\
 `-countofstickers [NumberOfStickers]` - enter the number of stickers for one tape (stickers are created on the basis of images from mp3 files meta data, if there are no images, there will be no stickers).\
+
+### Support
+I'm working on this and other projects for literally free, and it's a bit hard to survive on a 10,000 salary when you're a mechatronics student, so I'd love it if you'd support me: **https://boosty.to/igorir3**
