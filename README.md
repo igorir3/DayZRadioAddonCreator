@@ -36,6 +36,11 @@
 ### Конечный результат
 Ваш мод будет полностью создан и помещен в папку **output**, готов к публикации в мастерской или перепаковке в серверный пакет (включая файл Types).\
 
+### Изменение файлов
+Если вы хотите добавить свой язык, либо же отредактировать существующий перейдите в datapack/lang, и добавьте или же измените файл .txt с кодом вашего языка.\
+Для изменения изначальной текстуры кассеты, просто замените datapack/blanck.png на свой файл с тем же именем.\
+Если же вы хотите поменять шрифт, замените файл datapack/font.tff на свой с тем же именем.\
+
 ### Аргументы запуска
 `-debug` - Вывод дополнительной информации\
 `-logging` - использовать с -debug, сохраняет весь вывод консоли\
@@ -82,6 +87,11 @@ Step 14: When Complete press Enter/Return\
 
 ### End Result
 Your Mod will be fully created and placed in the **output** folder ready to be published to the workshop or repacked into a server pack (Including the Types File)\
+
+### Change files
+If you want to add your own language, or edit an existing one, go to **datapack/lang**, and add or edit a .txt file with the code for your language.\
+To change the original texture of the tape, just replace **datapack/blanck.png** with your file with the same name.\
+If you want to change the font, replace the **datapack/font.tff** file with your own file with the same name.\
 
 ### Startup Arguments
 `-debug` - Output additional information\
