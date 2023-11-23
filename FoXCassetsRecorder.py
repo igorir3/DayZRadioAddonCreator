@@ -325,7 +325,6 @@ if __name__ == "__main__": #иначе пизда multiprocessing
             debug(f"output\\{NameOfAddon}\\Cassettes\\textures", 0)
         scriptfile = open(f"output\\{NameOfAddon}\\config.cpp", "w", encoding='utf8')
         debug(f"scriptfile = output\\{NameOfAddon}\\config.cpp, 'w', encoding='utf8'", 0)
-        files = os.listdir("input\\")
         debug(f"Files: \n{files}",1)
 
         print(langpacket[18])
@@ -454,8 +453,7 @@ if __name__ == "__main__": #иначе пизда multiprocessing
                                 mask_im = Image.new("L", a.size, 0)
                                 draw = ImageDraw.Draw(mask_im)
                                 draw.ellipse((0, 0, 100, 100), fill=255)
-                                img.paste(a.rotate(random.randint(0, 120) - 60),
-                                          (random.randint(0, 400), random.randint(100, 290 - 90)), mask_im)
+                                img.paste(a.rotate(random.randint(0, 120) - 60),(random.randint(0, 400), random.randint(100, 290 - 90)), mask_im)
                         img.save(f'{syntaxofsymbols(filename)}.png')
 
                         os.chdir(f"{dayztooldir}\\Bin\\ImageToPAA")
