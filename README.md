@@ -42,6 +42,7 @@ Font = Путь к файлу шрифта в формате .tff, которы�
 
 ### Поддержка
 Я работаю над этим и другими проектами буквально за бесплатно, а выжить на зарплату в 10 000, когда ты студент-мехатроник проблематично, поэтому буду рад, если вы поддержите меня: **https://boosty.to/igorir3**
+If this system is not available to you, I will be glad to donate to WebMoney: https://pay.web.money/d/t4rp
 
 ## [ENG]
 This is a program for auto creation of addons for mods from Yuki and FoX that add radio.
@@ -83,3 +84,4 @@ Font = The path to the .tff font file used to create the cassette texture.
 
 ### Support
 I'm working on this and other projects literally for free, and surviving on a salary of 10,000 when you're a mechatronics student is problematic, so I'd be glad if you'd support me: **https://boosty.to/igorir3**
+If this system is not available to you, I will be glad to donate to WebMoney: https://pay.web.money/d/t4rp
