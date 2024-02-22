@@ -56,7 +56,7 @@ Step 1: Go to https://github.com/igorir3/DayZRadioAddonCreator and download the 
 Step 2: Create a folder to install the program and move `FoXRadioRecorder.exe`, `datapack` folder and all three files from `ffmpeg-n4.4-latest-win64-gpl-4.4` folder there. ATTENTION! YOU NEED TO MOVE THE FILE **FROM** FOLDER, NOT THE FOLDER ITSELF.
 
 ### Mod Creation Process
-Step 8: Run the file **FoXRadioRecorder.exe**\.
+Step 8: Run the file **FoXRadioRecorder.exe**.\
 Step 9: Click on the settings button and enter the path to the DayZTools folder in the `DayZTools Path` field, click on the "Agree" button and close the window, you can reopen the window to check if the settings are saved.\
 Step 10: **COPIRE** MP3 (must contain metadata if you want to use metadata input mode) or OGG to a new **input** folder, these files will be converted and moved to the final result.\
 Step 10.5: If you want to create a playlist, simply create a folder with the same name as the playlist and move the song files (.mp3 and .ogg) that will be part of the playlist to it.\
