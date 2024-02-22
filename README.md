@@ -13,17 +13,20 @@
 Шаг 2: Создайте папку для установки программы и перенесите туда `FoXRadioRecorder.exe`, папку `datapack`, а также все три файла из папки `ffmpeg-n4.4-latest-win64-gpl-4.4`. ВНИМАНИЕ! НУЖНО ПЕРЕНЕСТИ ФАЙЛ **ИЗ** ПАПКИ, А НЕ САМУ ПАПКУ.
 
 ### Процесс создания мода
-Шаг 8: Запустите файл **FoXRadioRecorder.exe**\
-Шаг 9: Нажмите на кнопку настроек и введите путь к папке DayZTools в поле `DayZTools Path`, нажмите на кнопку "Agree" и закройте окно, можете заново открыть окно, что бы проверить сохранились ли настройки.\
-Шаг 10: **СКОПИРУЙТЕ** MP3 (должен содержать метаданные, если вы хотите использовать режим ввода по метаданным) или OGG в новую папку **input**, эти файлы будут преобразованы и перемещены в конечный результат.\
-Шаг 10.5: Если вы хотите создать плейлист, то просто создайте папку с названием плейлиста и переместите туда файлы песен (.mp3 и .ogg), которые войдут в плейлист
-Шаг 11: Нажмите на кнопку обновить и проверьте все ли файлы есть в списке по середине.\
-Шаг 12: Выберите режим **Режим ввода** нажав на поле правее "Information input mode" и выберете нужный режим.\
+Шаг 3: Запустите файл **FoXRadioRecorder.exe**\
+Шаг 4: Нажмите на кнопку настроек и введите путь к папке DayZTools в поле `DayZTools Path`, нажмите на кнопку "Agree" и закройте окно, можете заново открыть окно, что бы проверить сохранились ли настройки.\
+Шаг 5: **СКОПИРУЙТЕ** MP3 (должен содержать метаданные, если вы хотите использовать режим ввода по метаданным) или OGG в новую папку **input**, эти файлы будут преобразованы и перемещены в конечный результат.\
+Шаг 5.5: Если вы хотите создать плейлист, то просто создайте папку с названием плейлиста и переместите туда файлы песен (.mp3 и .ogg), которые войдут в плейлист
+Шаг 6: Нажмите на кнопку обновить и проверьте все ли файлы есть в списке по середине.\
+Шаг 7: Выберите режим **Режим ввода** нажав на поле правее "Information input mode" и выберете нужный режим.\
 Automatic = Использует имена файлов\
 Manual = Ручной ввод (Каждый раз будет спрашивать, а как записать ту или иную песню)\
 Data from mp3 = Использует метаданные Mp3\
-Шаг 13: Если вы хотите включить генератор текстур нажмите на кнопку правее от Texture Generatore mode\
-Шаг 14: Нажмите "Process" и дождитесь окончания процесса (об этом будет написано в текстовом поле снизу окна). ВНИМАНИЕ! Во время работы программы будет открываться большое кол-во консольных окон, ПРОСТО НЕ ТРОГАЙТЕ ИХ!.
+Шаг 8: Вы также можете выбрать выходные данные на кассетах или компакт-дисках, установив соответствующие флажки в окне программы, и, конечно, вы также можете выбрать их оба.\
+Шаг 9: Если вы хотите включить генератор текстур, нажмите на кнопку справа от режима генератора текстур.\
+Шаг 10: Вы можете выбрать режим "Trash Radio", оно будет пережевывать все ваши музыкальные файлы, как если бы они были записаны с самого дерьмового радиоприемника, найденного в разобранном виде на чердаке вашего дедушки, имейте в виду, что некоторые музыкальные файлы при использовании этого режима могут превратиться в набор шумов...\
+Шаг 11: Если вы хотите включить генератор текстур нажмите на кнопку правее от Texture Generatore mode\
+Шаг 12: Нажмите "Process" и дождитесь окончания процесса (об этом будет написано в текстовом поле снизу окна). ВНИМАНИЕ! Во время работы программы будет открываться большое кол-во консольных окон, ПРОСТО НЕ ТРОГАЙТЕ ИХ!.
 
 ### Конечный результат
 Ваш мод будет полностью создан и помещен в папку **output**, готов к публикации в мастерской или перепаковке в серверный пакет (включая файл Types).\
@@ -56,17 +59,19 @@ Step 1: Go to https://github.com/igorir3/DayZRadioAddonCreator and download the 
 Step 2: Create a folder to install the program and move `FoXRadioRecorder.exe`, `datapack` folder and all three files from `ffmpeg-n4.4-latest-win64-gpl-4.4` folder there. ATTENTION! YOU NEED TO MOVE THE FILE **FROM** FOLDER, NOT THE FOLDER ITSELF.
 
 ### Mod Creation Process
-Step 8: Run the file **FoXRadioRecorder.exe**.\
-Step 9: Click on the settings button and enter the path to the DayZTools folder in the `DayZTools Path` field, click on the "Agree" button and close the window, you can reopen the window to check if the settings are saved.\
-Step 10: **COPIRE** MP3 (must contain metadata if you want to use metadata input mode) or OGG to a new **input** folder, these files will be converted and moved to the final result.\
-Step 10.5: If you want to create a playlist, simply create a folder with the same name as the playlist and move the song files (.mp3 and .ogg) that will be part of the playlist to it.\
-Step 11: Click the refresh button and check if all the files are in the middle of the list.
-Step 12: Select **Input mode** by clicking the box to the right of "Information input mode" and select the desired mode.\
+Step 3: Run the file **FoXRadioRecorder.exe**.\
+Step 4: Click on the settings button and enter the path to the DayZTools folder in the `DayZTools Path` field, click on the "Agree" button and close the window, you can reopen the window to check if the settings are saved.\
+Step 5: **COPIRE** MP3 (must contain metadata if you want to use metadata input mode) or OGG to a new **input** folder, these files will be converted and moved to the final result.\
+Step 5.5: If you want to create a playlist, simply create a folder with the same name as the playlist and move the song files (.mp3 and .ogg) that will be part of the playlist to it.\
+Step 6: Click the refresh button and check if all the files are in the middle of the list.
+Step 7: Select **Input mode** by clicking the box to the right of "Information input mode" and select the desired mode.\
 Automatic = Uses filenames.\
 Manual = Manual input (Every time it will ask you how to record this or that song).\
 Data from mp3 = Uses Mp3 metadata.\
-Step 13: If you want to enable the texture generator, click on the button to the right of Texture Generatore mode.
-Step 14: Click "Process" and wait for the process to finish (it will be written in the text box at the bottom of the window). WARNING: While the program is running, a large number of console windows will be opened, just DON'T TROUBLE THEM!
+Step 8: You can also select the output in cassettes or CDs by checking the appropriate boxes in the program window, and of course you can also select both of them.\
+Step 9: If you want to enable the texture generator, click on the button to the right of Texture Generatore mode.\
+Step 10:  You can choose the "Trash radio" mode, it will chew through all your music files as if they were recorded from the shittiest radio found disassembled in your grandfather's attic, keep in mind that some music files when using this mode can become just a set of noises...\
+Step 11: Click "Process" and wait for the process to finish (it will be written in the text box at the bottom of the window). WARNING: While the program is running, a large number of console windows will be opened, just DON'T TROUBLE THEM!\
 
 ### Final result
 Your mod will be fully created and placed in the **output** folder, ready to be published in the workshop or repackaged into a server package (including the Types file).\
