@@ -16,7 +16,7 @@
 Шаг 3: Запустите файл **FoXRadioRecorder.exe**\
 Шаг 4: Нажмите на кнопку настроек и введите путь к папке DayZTools в поле `DayZTools Path`, нажмите на кнопку "Agree" и закройте окно, можете заново открыть окно, что бы проверить сохранились ли настройки.\
 Шаг 5: **СКОПИРУЙТЕ** MP3 (должен содержать метаданные, если вы хотите использовать режим ввода по метаданным) или OGG в новую папку **input**, эти файлы будут преобразованы и перемещены в конечный результат.\
-Шаг 5.5: Если вы хотите создать плейлист, то просто создайте папку с названием плейлиста и переместите туда файлы песен (.mp3 и .ogg), которые войдут в плейлист
+Шаг 5.5: Если вы хотите создать плейлист, то просто создайте папку с названием плейлиста и переместите туда файлы песен (.mp3 и .ogg), которые войдут в плейлист\
 Шаг 6: Нажмите на кнопку обновить и проверьте все ли файлы есть в списке по середине.\
 Шаг 7: Выберите режим **Режим ввода** нажав на поле правее "Information input mode" и выберете нужный режим.\
 Automatic = Использует имена файлов\
@@ -50,12 +50,12 @@ If this system is not available to you, I will be glad to donate to WebMoney: ht
 ## [ENG]
 This is a program for auto creation of addons for mods from Yuki and FoX that add radio.
 **!The version for the Yuki mod will not be updated!**
-The FoX program is a completely rewritten and redesigned program, it has a GUI (If we talk about the .exe version), texture generator, etc.\
+The FoX program is a completely rewritten and redesigned program, it has a GUI (If we talk about the .exe version), texture generator, etc.
 
 To use the program requires DayZTools.
 
 ### Installation Process
-Step 1: Go to https://github.com/igorir3/DayZRadioAddonCreator and download the archive as a Zip file.\.
+Step 1: Go to https://github.com/igorir3/DayZRadioAddonCreator and download the archive as a Zip file.\
 Step 2: Create a folder to install the program and move `FoXRadioRecorder.exe`, `datapack` folder and all three files from `ffmpeg-n4.4-latest-win64-gpl-4.4` folder there. ATTENTION! YOU NEED TO MOVE THE FILE **FROM** FOLDER, NOT THE FOLDER ITSELF.
 
 ### Mod Creation Process
@@ -75,8 +75,8 @@ Step 11: Click "Process" and wait for the process to finish (it will be written 
 
 ### Final result
 Your mod will be fully created and placed in the **output** folder, ready to be published in the workshop or repackaged into a server package (including the Types file).\
-While running the time and space optimization program, the program will use already created files (If - it is possible). For an ordinary user, this means two things:\
-1. Mods weigh less\
+While running the time and space optimization program, the program will use already created files (If - it is possible). For an ordinary user, this means two things:
+1. Mods weigh less
 2. In certain cases, it significantly speeds up the work of the program
 
 ### Parameters
