@@ -71,7 +71,7 @@ Data from mp3 = Uses Mp3 metadata.\
 Step 8: You can also select the output in cassettes or CDs by checking the appropriate boxes in the program window, and of course you can also select both of them.\
 Step 9: If you want to enable the texture generator, click on the button to the right of Texture Generatore mode.\
 Step 10:  You can choose the "Trash radio" mode, it will chew through all your music files as if they were recorded from the shittiest radio found disassembled in your grandfather's attic, keep in mind that some music files when using this mode can become just a set of noises...\
-Step 11: Click "Process" and wait for the process to finish (it will be written in the text box at the bottom of the window). WARNING: While the program is running, a large number of console windows will be opened, just DON'T TROUBLE THEM!\
+Step 11: Click "Process" and wait for the process to finish (it will be written in the text box at the bottom of the window). WARNING: While the program is running, a large number of console windows will be opened, just DON'T TOUCH THEM!
 
 ### Final result
 Your mod will be fully created and placed in the **output** folder, ready to be published in the workshop or repackaged into a server package (including the Types file).\
