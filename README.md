@@ -1,3 +1,5 @@
+# DON'T USE THIS! A newer version is currently being developed, which fixes a lot of bugs, so I highly recommend not using this version if you do not know how to avoid mistakes on it!
+
 # DayZRadioAddonCreator
 
 ## [RUS]
