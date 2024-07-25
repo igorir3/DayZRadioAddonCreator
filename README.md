@@ -31,7 +31,7 @@ Note that this is not a description of **how to make a mod**, but **what functio
 ### Startup
 Immediately after launching, you will see a console and a notification asking for administrator rights. Don't be frightened, the console will minimize after a while and a full window with the interface will appear.
 
-Please note that although administrator rights are not required, the program may become unstable due to Windows blocking some directories''.
+`Please note that although administrator rights are not required, the program may become unstable due to Windows blocking some directories`
 
 ### **Further description of windows and buttons:**
 
