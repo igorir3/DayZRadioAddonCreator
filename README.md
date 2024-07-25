@@ -1,3 +1,170 @@
+# [ENG]
+## Translated by DeepL
+
+This is a program - editor, to create mod-addons for mod Fox's Radio for DayZ! In addition to creating projects, it can also directly export data to .pbo and create full-fledged mods for export to Steam Workshop. In addition to creating configs and conversion, the program can also create textures for each object separately!
+
+### Vocabulary
+TG - Texture Generator, the program can change textures for each object through an algorithm (Used for exporting).
+
+Media file - `.mp3` or `.ogg` file.
+
+Object - an object that will be exported as an object afterwards.
+
+Media object - an object that can be used in other objects, due to it TG works, and also SoundSets and SoundShaders are created.
+
+Texture object - an object for TG, and is also bound to each of the objects.
+
+
+### Installation:
+
+1. Install the repository archive
+2. Move the files RadioAddonCreatorPro.exe, ffmpeg.exe, ffplay.exe, ffprobe.exe and the data folder to an empty directory
+3. Done! You can run RadioAddonCreatorPro.exe.
+
+Please note! When you run the program for the first time in the settings you need to set the directory where DayZTools is located (Well, and install it if you don't have it :) It will look like this: 
+
+`C:\Program Files (x86)\Steam\steamapps\common\DayZ Tools`.
+
+### Usage
+Note that this is not a description of **how to make a mod**, but **what functions are available and how to use them**.
+
+### Startup
+Immediately after launching, you will see a console and a notification asking for administrator rights. Don't be frightened, the console will minimize after a while and a full window with the interface will appear.
+
+Please note that although administrator rights are not required, the program may become unstable due to Windows blocking some directories''.
+
+### **Further description of windows and buttons:**
+
+### Main window
+It has two buttons: 
+
+> Add - opens a window for adding an object
+> Remove - deletes the selected object
+
+There are 3 selectors at the top of the window:
+1. `File`
+
+    1.1 `New project` - removes everything from the program, it is recommended to save the project first and then use this button.
+   
+    1.2 `Load project` - loads the project from a file
+   
+    1.3 `Save project` - saves the project to a file
+   
+    1.4 `Check project` - checks the opened project for errors and defects. A list of all possible messages:
+
+    Errors - things that will prevent export to DayZ mod:
+   
+        `Invalid type` - Object type or media type not supported by the program
+   
+        `Invalid name` - Unsupported object name
+   
+        `File doesn't exist!` - The file specified in the object does not exist.
+   
+        `Media isn't a playlist but has a list of paths!` - The Media object specifies that it is a single song, although it has a list of songs.
+   
+        `Media object doesn't exist!` - The object specifies a media object that is not found in the project
+   
+        `Texture object doesn't exist!` - The object specifies a texture object that is not found in the project
+   
+    Warnings - something that won't prevent the export, but may 'mess it up':
+   
+        `The media is not used!` - The media object is not used in any of the objects
+   
+        `The texture is not used!` - Texture object, not used in any of the objects.
+   
+        `A recurring media file!` - A file used in a media object, used in more than one object.
+   
+        `A recurring texture file!` - File used in texture object, used in multiple objects
+   
+    1.5 `Export as DayZ mod` - Export to a mod ready to be uploaded to Steam or added to the server. When selecting this option requires you to select a folder that will be converted into a mod. ATTENTION! NOTE THAT YOU MUST SELECT AN EMPTY FOLDER, AND THE **FOLDER** WILL BECOME A MOD. IF THE FOLDER IS NOT EMPTY, THE FILES WILL BE DELETED! (Of course, if the user wants to :) )
+   
+    1.6 `Export without PBO` - Required to test the mod, exports similar to the item with `Export as DayZ mod`, but does not pack to PBO (Note that this mode of operation is more **buggy** and often gives errors and bugs, so it is recommended, only for advanced users).
+   
+    1.7 `Import Mod` - WIP
+   
+2. `Edit`.
+   
+    2.1 `Import Media` - Opens a window for adding a media object.
+   
+    2.2 `Import Texture` - Opens a window for adding a texture object
+   
+    2.3 `Edit Media` - Opens a window for editing media objects
+   
+    2.4 `Edit Texture` - Opens a window for editing a texture object
+   
+3. `Settings` - Opens the settings window
+
+### Add object window 
+Check boxes at the top - select the type of object, if you select more than one, copies of the object with different types will be created. For example: Cassette Object - will create a cassette, and selecting CD and Cassette object will create two objects, one CD and the other Cassette.
+
+The Media Selector is used to select the attached media object, selecting `Add New` opens the Add Media Object window
+
+The Okay button will close the window and create objects, the Cancel button will close the window but without creating objects.
+
+
+### Object Edit Window
+To open an object for editing, double-click on the desired object.
+1. Select the type of object
+2. `Name` - Name of the object
+3. `Desc` - Description of the object
+4. `File` - Medium object bound to this object
+5. `Texture` - Selection of texture object bound to the object 
+6. `Save` - Save changes
+
+### Add Media Object window
+In the text field you can write the path to the file, or by clicking on the button in the form of a folder you can open a window for selecting media files.
+
+If you want to create a playlist, check the `Playlist` box, note that to create a playlist, you need to select multiple files! If you select multiple files, but do not click on `Playlist`, then multiple media files will be created for each of the files
+
+### Texture Add Window
+Similar to the Add Media window, but does not have a `Playlist` checkbox, and imports png images rather than media files.
+
+#### Media editing window
+The first thing we are greeted with is a window for selecting an object to edit, just double click on the desired object.
+Next, the window for editing will open:
+1. `Name` - Name of the media object
+2. `Path` - Path to the file, similar to the same field for the media object. 3.
+3. `Album` - Album bound to the media object
+4. `Artist` - Artist bound to the media.
+5. `Media images` - Images attached to this media, you can add similar to the window for adding textures, uses, also png pictures
+6. `Description` - Description, for media, pretty much useless, but why not :)
+7. `Is playlist?` - Select whether the media is a playlist (checkmark is checked - so yes, if it is not, then no)
+8. `Save` - Saves changes
+
+### Texture editing window
+It starts with a window for selecting an object to edit, just like the media editing window. But then... HAHAHAHAHA! 
+1. `Name` - Name of the texture
+2. `Path` - The path to the texture file.
+3. Field for working with the texture
+4. Button for adding the field to textures
+5. `Save` - to save changes
+
+Field is an object placed on the texture by selecting two extreme points. 
+1. Parameter - This is an empty field for text, here you need to write what should be in the field. The `/` starts the command for insertion, and parameters between two `%` denotes placeholder.
+
+    1.1 `/sticker` - Sets the image, cropped to the media, set for the object for which the texture is created.
+   
+    1.2 `%name%` - Name of the media
+   
+    1.3 `%album%` - Media Album
+   
+    1.4 `%artist%` - Artist media
+   
+    1.5 `%author%` - Same as %artist%
+   
+    1.6 `%objectname%` - Object name
+   
+2. Two buttons to set the edge points. You click on the button, and after you click on the place you want on the texture. And as counter-intuitive as it may be, but the point 2 is recommended to put the bottom right, and the point 1 on the left top.
+3. `Rotation` - This is the choice of what angle, will be located at the inserted object (Applies to mainly for text)
+4. `-` - Deletes the field
+
+### Settings
+Window for program settings.
+1. `DayZTools` - Path to DayZ Tools
+2. `Local` - Language selection (WIP)
+3. `Number of subprocesses` - Number of subprocesses (Used when exporting to DayZ mod)
+4. `Save` - Save the change
+
 # [RUS]
 
 Это программа - редактор, для создания модов-аддонов на мод Fox's Radio для DayZ! По мимо создания проектов, она также может напрямую экспортировать данные в .pbo и создавать полноценные моды, для экспорта в Steam Workshop. По мимо создание конфигов и конвертации, программа, также сможет создать текстуры для каждого объекта отдельно!
