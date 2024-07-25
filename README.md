@@ -4,11 +4,11 @@
 This program is an editor for creating mods-addons for the Fox's Radio mod for DayZ! Besides creating projects, it can also directly export data to .pbo and create full-fledged mods for export to the Steam Workshop. In addition to creating configs and conversion, the program can also create textures for each object separately!
 
 ### Glossary
-TG - Texture Generator, changes textures for each object using an algorithm (used during export)
-Media file - a `.mp3` or `.ogg` file
-Object - an object that will be exported as an item
-Media object - an object that can be used in other objects; it works with TG and is used to create SoundSets and SoundShaders
-Texture Object - an object for TG, also attached to each of the objects
+TG - Texture Generator, changes textures for each object using an algorithm (used during export)\n
+Media file - a `.mp3` or `.ogg` file\n
+Object - an object that will be exported as an item\n
+Media object - an object that can be used in other objects; it works with TG and is used to create SoundSets and SoundShaders\n
+Texture Object - an object for TG, also attached to each of the objects\n
 
 ### Installation:
 
@@ -16,14 +16,14 @@ Texture Object - an object for TG, also attached to each of the objects
 2. Move the files RadioAddonCreatorPro.exe, ffmpeg.exe, ffplay.exe, ffprobe.exe, and the data folder into an empty directory
 3. Done! You can now run RadioAddonCreatorPro.exe
 
-Note! At the first launch of the program, you need to set the directory where DayZTools is located in the settings (and install it if it's not already installed). It should look something like this: 
+Note! At the first launch of the program, you need to set the directory where DayZTools is located in the settings (and install it if it's not already installed). It should look something like this:\n
 `C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZ Tools`
 
 ### Usage
 Please note that this will not describe **how to create a mod**, but **what features are available and how to use them**.
 
 ### Launch
-Immediately after launching, you will see a console and a notification requesting administrator rights. Don't worry, the console will minimize after a while, and a full-fledged window with an interface will appear.
+Immediately after launching, you will see a console and a notification requesting administrator rights. Don't worry, the console will minimize after a while, and a full-fledged window with an interface will appear.\n
 ```Please note that although administrator rights are not mandatory, the program may work less stably due to Windows blocking some directories```
 
 ### **Below is a description of the windows and buttons:**
@@ -99,11 +99,11 @@ Program settings window.
 Это программа - редактор, для создания модов-аддонов на мод Fox's Radio для DayZ! По мимо создания проектов, она также может напрямую экспортировать данные в .pbo и создавать полноценные моды, для экспорта в Steam Workshop. По мимо создание конфигов и конвертации, программа, также сможет создать текстуры для каждого объекта отдельно!
 
 ### Словарь
-TG - Texture Generator, изменение текстур для каждого объекта за счёт алгоритма (Используется при экспорте)
-Медиа файл - файл `.mp3` или `.ogg`
-Объект - объект, который после будет экспортирован как предмет
-Медиа объект - объект, что может быть использован в других объектах, за счёт него работает TG, а также создаются SoundSet-ы и SoundShader-ы
-Объект Текстур - объект для TG, а также привязывается к каждому из объектов
+TG - Texture Generator, изменение текстур для каждого объекта за счёт алгоритма (Используется при экспорте)\n
+Медиа файл - файл `.mp3` или `.ogg`\n
+Объект - объект, который после будет экспортирован как предмет\n
+Медиа объект - объект, что может быть использован в других объектах, за счёт него работает TG, а также создаются SoundSet-ы и SoundShader-ы\n
+Объект Текстур - объект для TG, а также привязывается к каждому из объектов\n
 
 ### Установка:
 
@@ -111,14 +111,14 @@ TG - Texture Generator, изменение текстур для каждого 
 2. Переместите файлы RadioAddonCreatorPro.exe, ffmpeg.exe, ffplay.exe, ffprobe.exe и папку data в пустую директорию
 3. Готово! Можете запускать RadioAddonCreatorPro.exe
 
-Учтите! Что при первом запуске программы в настройках нужно установить директорию где расположен DayZTools (Ну, и установить его, если его нет :) Выглядеть это будет примерно так: 
+Учтите! Что при первом запуске программы в настройках нужно установить директорию где расположен DayZTools (Ну, и установить его, если его нет :) Выглядеть это будет примерно так: \n
 `C:\Program Files (x86)\Steam\steamapps\common\DayZ Tools`
 
 ### Использование
 Учтите, что это будет не описание **как сделать мод**, а **какие есть функции и как их использовать**.
 
 ### Запуск
-Сразу после запуска вы увидите консоль и уведомление о запросе прав администратора. Не пугайтесь, консоль через время свернётся, и появится полноценное окно с интерфейсом.
+Сразу после запуска вы увидите консоль и уведомление о запросе прав администратора. Не пугайтесь, консоль через время свернётся, и появится полноценное окно с интерфейсом.\n
 ```Учтите, что хоть права администратора не обязательны, программа может нестабильней работать из-за блокировки Windows некоторых директорий```
 
 ### **Далее будет описания по окнам и кнопкам:**
@@ -158,9 +158,9 @@ TG - Texture Generator, изменение текстур для каждого 
 3. `Settings` - Открывает настройки
 
 ### Окно добавления объекта 
-Чек боксы сверху - выбор типа объекта, если выбрать больше одного, будет созданы копии объекта с разными типами. Например: Cassette Object - создаст кассету, а выбор CD и Cassette object создаст два объекта, один CD, и другой Cassette.
-Селектор медиа, нужен для выбора привязанного объекта медиа, если выбрать `Add New` открывает окно добавления объекта медиа
-Кнопка Okay закроет окно и создаст объекты, кнопка Cancel, закроет окно, но без создания объектов
+Чек боксы сверху - выбор типа объекта, если выбрать больше одного, будет созданы копии объекта с разными типами. Например: Cassette Object - создаст кассету, а выбор CD и Cassette object создаст два объекта, один CD, и другой Cassette.\n
+Селектор медиа, нужен для выбора привязанного объекта медиа, если выбрать `Add New` открывает окно добавления объекта медиа\n
+Кнопка Okay закроет окно и создаст объекты, кнопка Cancel, закроет окно, но без создания объектов\n
 
 ### Окно редактирования объекта
 Для открытия объекта для редактирования, дважды нажмите на нужный объект.
@@ -172,7 +172,7 @@ TG - Texture Generator, изменение текстур для каждого 
 6. `Save` - Сохранение изменений
 
 ### Окно добавления объекта медиа
-В поле для текста можно написать путь к файлу, либо же нажав на кнопку в виде папки, открыть окно для выбора файлов медиа.
+В поле для текста можно написать путь к файлу, либо же нажав на кнопку в виде папки, открыть окно для выбора файлов медиа.\n
 Если вы хотите создать плейлист, поставьте галочку в `Playlist`, учтите, что для создания плей листов, нужно выбрать несколько файлов! Если же вы выделете множество файлов, но не нажмёте на `Playlist`, то будет создано множество media файлов для каждого из файлов
 
 ### Окно добавления текстур
