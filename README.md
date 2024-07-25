@@ -39,6 +39,7 @@ Please note that although administrator rights are not required, the program may
 It has two buttons: 
 
 > Add - opens a window for adding an object
+> 
 > Remove - deletes the selected object
 
 There are 3 selectors at the top of the window:
@@ -205,6 +206,7 @@ TG - Texture Generator, изменение текстур для каждого 
 Имеет две кнопки: 
 
 > Add - открывает окно добавления объекта
+> 
 > Remove - удаление выбранного объекта
 
 Сверху есть 3 селектора при наведеннии на которых откроется выбор:
