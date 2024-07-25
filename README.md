@@ -42,15 +42,23 @@ It has two buttons:
 At the top, there are 3 selectors, hovering over which will open a choice:
 1. `File`
     1.1 `New project` - completely removes everything from the program, it is recommended to create a backup of the project beforehand
+   
     1.2 `Open project` - opens an existing project
+   
     1.3 `Save project` - saves the current project
+   
     1.4 `Save project as...` - saves the project under a different name
-2. `Objects` - object selector
+   
+3. `Objects` - object selector
     2.1 `Add object` - opens the window to add an object
+   
     2.2 `Remove object` - removes the selected object
-3. `Help`
+   
+5. `Help`
     3.1 `About` - information about the program
+   
     3.2 `Check for updates` - checks for program updates
+   
 
 ### Adding an Object
 A window opens with fields for object information:
@@ -82,15 +90,22 @@ Starts with a window to select an object for editing, similar to the media editi
 
 Field — an object placed on the texture by selecting two extreme points.
 1. Parameter — This is an empty text field where you need to enter what should be in the field. Commands start with `/`, and parameters between two `%` denote placeholders
+2. 
     1.1 `/sticker` - Sets an image cropped in a circle associated with the media set for the object the texture is created for
+   
     1.2 `%name%` - Media name
+   
     1.3 `%album%` - Media album
+   
     1.4 `%artist%` - Media artist
+   
     1.5 `%author%` - Same as %artist%
+   
     1.6 `%objectname%` - Object name
-2. Two buttons to set extreme points. Click the button, then click on the desired place on the texture. Although it may seem counterintuitive, it's recommended to set point 2 at the bottom right and point 1 at the top left
-3. `Rotation` — Angle at which the inserted object will be placed (mainly used for text)
-4. `-` - Deletes the field
+   
+4. Two buttons to set extreme points. Click the button, then click on the desired place on the texture. Although it may seem counterintuitive, it's recommended to set point 2 at the bottom right and point 1 at the top left
+5. `Rotation` — Angle at which the inserted object will be placed (mainly used for text)
+6. `-` - Deletes the field
 
 ### Settings
 Program settings window.
@@ -144,10 +159,13 @@ TG - Texture Generator, изменение текстур для каждого 
 Сверху есть 3 селектора при наведеннии на которых откроется выбор:
 1. `File`
     1.1 `New project` - удаляет ВООБЩЕ всё из программы, рекомендуется вначале сохранить проект, а после использовать эту кнопку
-    1.2 `Load project` - загружает проект из файла
-    1.3 `Save project` - сохраняет проект в файл
-    1.4 `Check project` - проверяет открытый проект на наличие ошибок, а также недочётов. Список всех возможных сообщений:
    
+    1.2 `Load project` - загружает проект из файла
+   
+    1.3 `Save project` - сохраняет проект в файл
+   
+    1.4 `Check project` - проверяет открытый проект на наличие ошибок, а также недочётов. Список всех возможных сообщений:
+
     Ошибки - то, что помешает экспорту в DayZ мод:
    
         `Invalid type` - Не поддерживаемый программой тип объекта или тип медиа
@@ -173,13 +191,21 @@ TG - Texture Generator, изменение текстур для каждого 
         `A recurring texture file!` - Файл использующиеся в объекте текстур, используется в нескольких объектах
    
     1.5 `Export as DayZ mod` - Экспорт в мод готовый для выкладывания в Steam или для добавления на сервер. При выборе этого параметра требуется выбрать папку, которая после будет преобразована в мод. ВНИМАНИЕ! УЧТИТЕ, ЧТО ВЫБИРАТЬ НУЖНО ПУСТУЮ ПАПКУ, И ИМЕННА **ПАПКА** СТАНЕТ МОДОМ. ЕСЛИ ПАПКА НЕ ПУСТА ФАЙЛЫ БУДУТ УДАЛЕНЫ! (Конечно, если пользователь этого захочет :) )
+   
     1.6 `Export without PBO` - Требуется для проверки мода, экспортирует по аналогии с пунктом с `Export as DayZ mod`, но не упаковывает в PBO (Учтите, что данный режим работы более **багованный** и часто выдаёт ошибки и недочёты, так, что рекомендуется, только для продвинутых пользователей)
+   
     1.7 `Import Mod` - WIP
+   
 3. `Edit`
+   
     2.1 `Import Media` - Открывает окно для добавления объекта медиа
+   
     2.2 `Import Texture` - Открывает окно для добавления объекта текстур
+   
     2.3 `Edit Media` - Открывает окно для редактирования объектов медиа
+   
     2.4 `Edit Texture` - Открывает окно для редактирования объекта текстур
+   
 4. `Settings` - Открывает настройки
 
 ### Окно добавления объекта 
@@ -229,15 +255,21 @@ TG - Texture Generator, изменение текстур для каждого 
 
 Поле — это объект размещаемой на текстуре по средством выделения двух крайних точек. 
 1. Параметр — Это пустое поле для текста, сюда нужно вписать, то, что должно быть в поле. C `/` начинается команда для вставки, а параметры между двумя `%` обозначает placeholder
-    1.1 `/sticker` - Устанавливает изображение, обрезанное по кругу привязанное к медиа, установленное для объекта, для которого создаётся текстура 
+    1.1 `/sticker` - Устанавливает изображение, обрезанное по кругу привязанное к медиа, установленное для объекта, для которого создаётся текстура
+   
     1.2 `%name%` - Имя media
+   
     1.3 `%album%` - Aльбом media
+   
     1.4 `%artist%` - Исполнитель media
+   
     1.5 `%author%` - Такой же как %artist%
+   
     1.6 `%objectname%` - Имя объекта
-2. Две кнопки для установки крайних точек. Нажимаете на кнопку, а после жмёте на нужное вам место на текстуре. И как бы это не было контр-интуитивно, но точку 2 рекомендуется ставить снизу справа, а точку 1 слева сверху
-3. `Rotation` — Это выбор под каким углом, будет расположен вставляемый объект (Применяется для в основном для текста)
-4. `-` - Удаление поля
+   
+3. Две кнопки для установки крайних точек. Нажимаете на кнопку, а после жмёте на нужное вам место на текстуре. И как бы это не было контр-интуитивно, но точку 2 рекомендуется ставить снизу справа, а точку 1 слева сверху
+4. `Rotation` — Это выбор под каким углом, будет расположен вставляемый объект (Применяется для в основном для текста)
+5. `-` - Удаление поля
 
 ### Настройки
 Окно для настройки программы.
