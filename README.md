@@ -1,3 +1,99 @@
+# [ENG] 
+## Translated by ChatGPT 4o
+
+This program is an editor for creating mods-addons for the Fox's Radio mod for DayZ! Besides creating projects, it can also directly export data to .pbo and create full-fledged mods for export to the Steam Workshop. In addition to creating configs and conversion, the program can also create textures for each object separately!
+
+### Glossary
+TG - Texture Generator, changes textures for each object using an algorithm (used during export)
+Media file - a `.mp3` or `.ogg` file
+Object - an object that will be exported as an item
+Media object - an object that can be used in other objects; it works with TG and is used to create SoundSets and SoundShaders
+Texture Object - an object for TG, also attached to each of the objects
+
+### Installation:
+
+1. Install the repository archive
+2. Move the files RadioAddonCreatorPro.exe, ffmpeg.exe, ffplay.exe, ffprobe.exe, and the data folder into an empty directory
+3. Done! You can now run RadioAddonCreatorPro.exe
+
+Note! At the first launch of the program, you need to set the directory where DayZTools is located in the settings (and install it if it's not already installed). It should look something like this: 
+`C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZ Tools`
+
+### Usage
+Please note that this will not describe **how to create a mod**, but **what features are available and how to use them**.
+
+### Launch
+Immediately after launching, you will see a console and a notification requesting administrator rights. Don't worry, the console will minimize after a while, and a full-fledged window with an interface will appear.
+```Please note that although administrator rights are not mandatory, the program may work less stably due to Windows blocking some directories```
+
+### **Below is a description of the windows and buttons:**
+
+### Main Window
+It has two buttons:
+
+> Add - opens the window to add an object
+> Remove - deletes the selected object
+
+At the top, there are 3 selectors, hovering over which will open a choice:
+1. `File`
+1.1 `New project` - completely removes everything from the program, it is recommended to create a backup of the project beforehand
+1.2 `Open project` - opens an existing project
+1.3 `Save project` - saves the current project
+1.4 `Save project as...` - saves the project under a different name
+2. `Objects` - object selector
+2.1 `Add object` - opens the window to add an object
+2.2 `Remove object` - removes the selected object
+3. `Help`
+3.1 `About` - information about the program
+3.2 `Check for updates` - checks for program updates
+
+### Adding an Object
+A window opens with fields for object information:
+1. `Object name` - name of the object
+2. `Media` - media attached to the object
+3. `Texture` - texture attached to the object
+4. `Script` - script attached to the object
+5. `Category` - category for the object
+6. `Save` - saves the object
+
+### Editing Media
+A window opens for editing media, similar to the object adding window but with fields for media:
+1. `Name` - media name
+2. `Path` - path to the media file
+3. `Album` - album associated with the media
+4. `Artist` - artist associated with the media
+5. `Media images` - images associated with the media, can be added similarly to the texture adding window, also uses png images
+6. `Description` - description of the media, quite useless, but why not :)
+7. `Is playlist?` - whether the media is a playlist (checked means yes, unchecked means no)
+8. `Save` - saves the changes
+
+### Editing Textures
+Starts with a window to select an object for editing, similar to the media editing window. But then... HAHAHA!
+1. `Name` - texture name
+2. `Path` - path to the texture file
+3. Field for working with the texture
+4. Button to add a field to the texture
+5. `Save` - saves the changes
+
+Field — an object placed on the texture by selecting two extreme points.
+1. Parameter — This is an empty text field where you need to enter what should be in the field. Commands start with `/`, and parameters between two `%` denote placeholders
+1.1 `/sticker` - Sets an image cropped in a circle associated with the media set for the object the texture is created for
+1.2 `%name%` - Media name
+1.3 `%album%` - Media album
+1.4 `%artist%` - Media artist
+1.5 `%author%` - Same as %artist%
+1.6 `%objectname%` - Object name
+2. Two buttons to set extreme points. Click the button, then click on the desired place on the texture. Although it may seem counterintuitive, it's recommended to set point 2 at the bottom right and point 1 at the top left
+3. `Rotation` — Angle at which the inserted object will be placed (mainly used for text)
+4. `-` - Deletes the field
+
+### Settings
+Program settings window.
+1. `DayZTools` - Path to DayZ Tools
+2. `Local` - Language selection (WIP)
+3. `Number of subprocesses` - Number of parallel processes (used during export to DayZ mod)
+4. `Save` - Saves the changes
+
 # [RUS]
 
 Это программа - редактор, для создания модов-аддонов на мод Fox's Radio для DayZ! По мимо создания проектов, она также может напрямую экспортировать данные в .pbo и создавать полноценные моды, для экспорта в Steam Workshop. По мимо создание конфигов и конвертации, программа, также сможет создать текстуры для каждого объекта отдельно!
@@ -120,99 +216,3 @@ TG - Texture Generator, изменение текстур для каждого 
 2. `Local` - Выбор языка (WIP)
 3. `Number of subprocesses` - Кол-во паралельных процессов (Используется при экспорте в DayZ мод)
 4. `Save` - Сохранение изменения
-
-# [ENG] 
-## Translated by ChatGPT 4o
-
-This program is an editor for creating mods-addons for the Fox's Radio mod for DayZ! Besides creating projects, it can also directly export data to .pbo and create full-fledged mods for export to the Steam Workshop. In addition to creating configs and conversion, the program can also create textures for each object separately!
-
-### Glossary
-TG - Texture Generator, changes textures for each object using an algorithm (used during export)
-Media file - a `.mp3` or `.ogg` file
-Object - an object that will be exported as an item
-Media object - an object that can be used in other objects; it works with TG and is used to create SoundSets and SoundShaders
-Texture Object - an object for TG, also attached to each of the objects
-
-### Installation:
-
-1. Install the repository archive
-2. Move the files RadioAddonCreatorPro.exe, ffmpeg.exe, ffplay.exe, ffprobe.exe, and the data folder into an empty directory
-3. Done! You can now run RadioAddonCreatorPro.exe
-
-Note! At the first launch of the program, you need to set the directory where DayZTools is located in the settings (and install it if it's not already installed). It should look something like this: 
-`C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZ Tools`
-
-### Usage
-Please note that this will not describe **how to create a mod**, but **what features are available and how to use them**.
-
-### Launch
-Immediately after launching, you will see a console and a notification requesting administrator rights. Don't worry, the console will minimize after a while, and a full-fledged window with an interface will appear.
-```Please note that although administrator rights are not mandatory, the program may work less stably due to Windows blocking some directories```
-
-### **Below is a description of the windows and buttons:**
-
-### Main Window
-It has two buttons:
-
-> Add - opens the window to add an object
-> Remove - deletes the selected object
-
-At the top, there are 3 selectors, hovering over which will open a choice:
-1. `File`
-1.1 `New project` - completely removes everything from the program, it is recommended to create a backup of the project beforehand
-1.2 `Open project` - opens an existing project
-1.3 `Save project` - saves the current project
-1.4 `Save project as...` - saves the project under a different name
-2. `Objects` - object selector
-2.1 `Add object` - opens the window to add an object
-2.2 `Remove object` - removes the selected object
-3. `Help`
-3.1 `About` - information about the program
-3.2 `Check for updates` - checks for program updates
-
-### Adding an Object
-A window opens with fields for object information:
-1. `Object name` - name of the object
-2. `Media` - media attached to the object
-3. `Texture` - texture attached to the object
-4. `Script` - script attached to the object
-5. `Category` - category for the object
-6. `Save` - saves the object
-
-### Editing Media
-A window opens for editing media, similar to the object adding window but with fields for media:
-1. `Name` - media name
-2. `Path` - path to the media file
-3. `Album` - album associated with the media
-4. `Artist` - artist associated with the media
-5. `Media images` - images associated with the media, can be added similarly to the texture adding window, also uses png images
-6. `Description` - description of the media, quite useless, but why not :)
-7. `Is playlist?` - whether the media is a playlist (checked means yes, unchecked means no)
-8. `Save` - saves the changes
-
-### Editing Textures
-Starts with a window to select an object for editing, similar to the media editing window. But then... HAHAHA!
-1. `Name` - texture name
-2. `Path` - path to the texture file
-3. Field for working with the texture
-4. Button to add a field to the texture
-5. `Save` - saves the changes
-
-Field — an object placed on the texture by selecting two extreme points.
-1. Parameter — This is an empty text field where you need to enter what should be in the field. Commands start with `/`, and parameters between two `%` denote placeholders
-1.1 `/sticker` - Sets an image cropped in a circle associated with the media set for the object the texture is created for
-1.2 `%name%` - Media name
-1.3 `%album%` - Media album
-1.4 `%artist%` - Media artist
-1.5 `%author%` - Same as %artist%
-1.6 `%objectname%` - Object name
-2. Two buttons to set extreme points. Click the button, then click on the desired place on the texture. Although it may seem counterintuitive, it's recommended to set point 2 at the bottom right and point 1 at the top left
-3. `Rotation` — Angle at which the inserted object will be placed (mainly used for text)
-4. `-` - Deletes the field
-
-### Settings
-Program settings window.
-1. `DayZTools` - Path to DayZ Tools
-2. `Local` - Language selection (WIP)
-3. `Number of subprocesses` - Number of parallel processes (used during export to DayZ mod)
-4. `Save` - Saves the changes
