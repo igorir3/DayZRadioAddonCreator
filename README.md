@@ -1,98 +1,170 @@
-# [ENG] 
-## Translated by ChatGPT 4o
+# [ENG]
+## Translated by DeepL
 
-This program is an editor for creating mods-addons for the Fox's Radio mod for DayZ! Besides creating projects, it can also directly export data to .pbo and create full-fledged mods for export to the Steam Workshop. In addition to creating configs and conversion, the program can also create textures for each object separately!
+This is a program - editor, to create mod-addons for mod Fox's Radio for DayZ! In addition to creating projects, it can also directly export data to .pbo and create full-fledged mods for export to Steam Workshop. In addition to creating configs and conversion, the program can also create textures for each object separately!
 
-### Glossary
-TG - Texture Generator, changes textures for each object using an algorithm (used during export)
-Media file - a `.mp3` or `.ogg` file
-Object - an object that will be exported as an item
-Media object - an object that can be used in other objects; it works with TG and is used to create SoundSets and SoundShaders
-Texture Object - an object for TG, also attached to each of the objects
+### Vocabulary
+TG - Texture Generator, the program can change textures for each object through an algorithm (Used for exporting).
+
+Media file - `.mp3` or `.ogg` file.
+
+Object - an object that will be exported as an object afterwards.
+
+Media object - an object that can be used in other objects, due to it TG works, and also SoundSets and SoundShaders are created.
+
+Texture object - an object for TG, and is also bound to each of the objects.
+
 
 ### Installation:
 
 1. Install the repository archive
-2. Move the files RadioAddonCreatorPro.exe, ffmpeg.exe, ffplay.exe, ffprobe.exe, and the data folder into an empty directory
-3. Done! You can now run RadioAddonCreatorPro.exe
+2. Move the files RadioAddonCreatorPro.exe, ffmpeg.exe, ffplay.exe, ffprobe.exe and the data folder to an empty directory
+3. Done! You can run RadioAddonCreatorPro.exe.
 
-Note! At the first launch of the program, you need to set the directory where DayZTools is located in the settings (and install it if it's not already installed). It should look something like this: 
-`C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZ Tools`
+Please note! When you run the program for the first time in the settings you need to set the directory where DayZTools is located (Well, and install it if you don't have it :) It will look like this: 
+
+`C:\Program Files (x86)\Steam\steamapps\common\DayZ Tools`.
 
 ### Usage
-Please note that this will not describe **how to create a mod**, but **what features are available and how to use them**.
+Note that this is not a description of **how to make a mod**, but **what functions are available and how to use them**.
 
-### Launch
-Immediately after launching, you will see a console and a notification requesting administrator rights. Don't worry, the console will minimize after a while, and a full-fledged window with an interface will appear.
-```Please note that although administrator rights are not mandatory, the program may work less stably due to Windows blocking some directories```
+### Startup
+Immediately after launching, you will see a console and a notification asking for administrator rights. Don't be frightened, the console will minimize after a while and a full window with the interface will appear.
 
-### **Below is a description of the windows and buttons:**
+`Please note that although administrator rights are not required, the program may become unstable due to Windows blocking some directories`
 
-### Main Window
-It has two buttons:
+### **Further description of windows and buttons:**
 
-> Add - opens the window to add an object
+### Main window
+It has two buttons: 
+
+> Add - opens a window for adding an object
+> 
 > Remove - deletes the selected object
 
-At the top, there are 3 selectors, hovering over which will open a choice:
+There are 3 selectors at the top of the window:
 1. `File`
-1.1 `New project` - completely removes everything from the program, it is recommended to create a backup of the project beforehand
-1.2 `Open project` - opens an existing project
-1.3 `Save project` - saves the current project
-1.4 `Save project as...` - saves the project under a different name
-2. `Objects` - object selector
-2.1 `Add object` - opens the window to add an object
-2.2 `Remove object` - removes the selected object
-3. `Help`
-3.1 `About` - information about the program
-3.2 `Check for updates` - checks for program updates
 
-### Adding an Object
-A window opens with fields for object information:
-1. `Object name` - name of the object
-2. `Media` - media attached to the object
-3. `Texture` - texture attached to the object
-4. `Script` - script attached to the object
-5. `Category` - category for the object
-6. `Save` - saves the object
+    1.1 `New project` - removes everything from the program, it is recommended to save the project first and then use this button.
+   
+    1.2 `Load project` - loads the project from a file
+   
+    1.3 `Save project` - saves the project to a file
+   
+    1.4 `Check project` - checks the opened project for errors and defects. A list of all possible messages:
 
-### Editing Media
-A window opens for editing media, similar to the object adding window but with fields for media:
-1. `Name` - media name
-2. `Path` - path to the media file
-3. `Album` - album associated with the media
-4. `Artist` - artist associated with the media
-5. `Media images` - images associated with the media, can be added similarly to the texture adding window, also uses png images
-6. `Description` - description of the media, quite useless, but why not :)
-7. `Is playlist?` - whether the media is a playlist (checked means yes, unchecked means no)
-8. `Save` - saves the changes
+    Errors - things that will prevent export to DayZ mod:
+   
+        `Invalid type` - Object type or media type not supported by the program
+   
+        `Invalid name` - Unsupported object name
+   
+        `File doesn't exist!` - The file specified in the object does not exist.
+   
+        `Media isn't a playlist but has a list of paths!` - The Media object specifies that it is a single song, although it has a list of songs.
+   
+        `Media object doesn't exist!` - The object specifies a media object that is not found in the project
+   
+        `Texture object doesn't exist!` - The object specifies a texture object that is not found in the project
+   
+    Warnings - something that won't prevent the export, but may 'mess it up':
+   
+        `The media is not used!` - The media object is not used in any of the objects
+   
+        `The texture is not used!` - Texture object, not used in any of the objects.
+   
+        `A recurring media file!` - A file used in a media object, used in more than one object.
+   
+        `A recurring texture file!` - File used in texture object, used in multiple objects
+   
+    1.5 `Export as DayZ mod` - Export to a mod ready to be uploaded to Steam or added to the server. When selecting this option requires you to select a folder that will be converted into a mod. ATTENTION! NOTE THAT YOU MUST SELECT AN EMPTY FOLDER, AND THE **FOLDER** WILL BECOME A MOD. IF THE FOLDER IS NOT EMPTY, THE FILES WILL BE DELETED! (Of course, if the user wants to :) )
+   
+    1.6 `Export without PBO` - Required to test the mod, exports similar to the item with `Export as DayZ mod`, but does not pack to PBO (Note that this mode of operation is more **buggy** and often gives errors and bugs, so it is recommended, only for advanced users).
+   
+    1.7 `Import Mod` - WIP
+   
+2. `Edit`.
+   
+    2.1 `Import Media` - Opens a window for adding a media object.
+   
+    2.2 `Import Texture` - Opens a window for adding a texture object
+   
+    2.3 `Edit Media` - Opens a window for editing media objects
+   
+    2.4 `Edit Texture` - Opens a window for editing a texture object
+   
+3. `Settings` - Opens the settings window
 
-### Editing Textures
-Starts with a window to select an object for editing, similar to the media editing window. But then... HAHAHA!
-1. `Name` - texture name
-2. `Path` - path to the texture file
+### Add object window 
+Check boxes at the top - select the type of object, if you select more than one, copies of the object with different types will be created. For example: Cassette Object - will create a cassette, and selecting CD and Cassette object will create two objects, one CD and the other Cassette.
+
+The Media Selector is used to select the attached media object, selecting `Add New` opens the Add Media Object window
+
+The Okay button will close the window and create objects, the Cancel button will close the window but without creating objects.
+
+
+### Object Edit Window
+To open an object for editing, double-click on the desired object.
+1. Select the type of object
+2. `Name` - Name of the object
+3. `Desc` - Description of the object
+4. `File` - Medium object bound to this object
+5. `Texture` - Selection of texture object bound to the object 
+6. `Save` - Save changes
+
+### Add Media Object window
+In the text field you can write the path to the file, or by clicking on the button in the form of a folder you can open a window for selecting media files.
+
+If you want to create a playlist, check the `Playlist` box, note that to create a playlist, you need to select multiple files! If you select multiple files, but do not click on `Playlist`, then multiple media files will be created for each of the files
+
+### Texture Add Window
+Similar to the Add Media window, but does not have a `Playlist` checkbox, and imports png images rather than media files.
+
+#### Media editing window
+The first thing we are greeted with is a window for selecting an object to edit, just double click on the desired object.
+Next, the window for editing will open:
+1. `Name` - Name of the media object
+2. `Path` - Path to the file, similar to the same field for the media object. 3.
+3. `Album` - Album bound to the media object
+4. `Artist` - Artist bound to the media.
+5. `Media images` - Images attached to this media, you can add similar to the window for adding textures, uses, also png pictures
+6. `Description` - Description, for media, pretty much useless, but why not :)
+7. `Is playlist?` - Select whether the media is a playlist (checkmark is checked - so yes, if it is not, then no)
+8. `Save` - Saves changes
+
+### Texture editing window
+It starts with a window for selecting an object to edit, just like the media editing window. But then... HAHAHAHAHA! 
+1. `Name` - Name of the texture
+2. `Path` - The path to the texture file.
 3. Field for working with the texture
-4. Button to add a field to the texture
-5. `Save` - saves the changes
+4. Button for adding the field to textures
+5. `Save` - to save changes
 
-Field — an object placed on the texture by selecting two extreme points.
-1. Parameter — This is an empty text field where you need to enter what should be in the field. Commands start with `/`, and parameters between two `%` denote placeholders
-1.1 `/sticker` - Sets an image cropped in a circle associated with the media set for the object the texture is created for
-1.2 `%name%` - Media name
-1.3 `%album%` - Media album
-1.4 `%artist%` - Media artist
-1.5 `%author%` - Same as %artist%
-1.6 `%objectname%` - Object name
-2. Two buttons to set extreme points. Click the button, then click on the desired place on the texture. Although it may seem counterintuitive, it's recommended to set point 2 at the bottom right and point 1 at the top left
-3. `Rotation` — Angle at which the inserted object will be placed (mainly used for text)
+Field is an object placed on the texture by selecting two extreme points. 
+1. Parameter - This is an empty field for text, here you need to write what should be in the field. The `/` starts the command for insertion, and parameters between two `%` denotes placeholder.
+
+    1.1 `/sticker` - Sets the image, cropped to the media, set for the object for which the texture is created.
+   
+    1.2 `%name%` - Name of the media
+   
+    1.3 `%album%` - Media Album
+   
+    1.4 `%artist%` - Artist media
+   
+    1.5 `%author%` - Same as %artist%
+   
+    1.6 `%objectname%` - Object name
+   
+2. Two buttons to set the edge points. You click on the button, and after you click on the place you want on the texture. And as counter-intuitive as it may be, but the point 2 is recommended to put the bottom right, and the point 1 on the left top.
+3. `Rotation` - This is the choice of what angle, will be located at the inserted object (Applies to mainly for text)
 4. `-` - Deletes the field
 
 ### Settings
-Program settings window.
+Window for program settings.
 1. `DayZTools` - Path to DayZ Tools
 2. `Local` - Language selection (WIP)
-3. `Number of subprocesses` - Number of parallel processes (used during export to DayZ mod)
-4. `Save` - Saves the changes
+3. `Number of subprocesses` - Number of subprocesses (Used when exporting to DayZ mod)
+4. `Save` - Save the change
 
 # [RUS]
 
@@ -100,10 +172,15 @@ Program settings window.
 
 ### Словарь
 TG - Texture Generator, изменение текстур для каждого объекта за счёт алгоритма (Используется при экспорте)
+
 Медиа файл - файл `.mp3` или `.ogg`
+
 Объект - объект, который после будет экспортирован как предмет
+
 Медиа объект - объект, что может быть использован в других объектах, за счёт него работает TG, а также создаются SoundSet-ы и SoundShader-ы
+
 Объект Текстур - объект для TG, а также привязывается к каждому из объектов
+
 
 ### Установка:
 
@@ -112,6 +189,7 @@ TG - Texture Generator, изменение текстур для каждого 
 3. Готово! Можете запускать RadioAddonCreatorPro.exe
 
 Учтите! Что при первом запуске программы в настройках нужно установить директорию где расположен DayZTools (Ну, и установить его, если его нет :) Выглядеть это будет примерно так: 
+
 `C:\Program Files (x86)\Steam\steamapps\common\DayZ Tools`
 
 ### Использование
@@ -119,6 +197,7 @@ TG - Texture Generator, изменение текстур для каждого 
 
 ### Запуск
 Сразу после запуска вы увидите консоль и уведомление о запросе прав администратора. Не пугайтесь, консоль через время свернётся, и появится полноценное окно с интерфейсом.
+
 ```Учтите, что хоть права администратора не обязательны, программа может нестабильней работать из-за блокировки Windows некоторых директорий```
 
 ### **Далее будет описания по окнам и кнопкам:**
@@ -127,40 +206,69 @@ TG - Texture Generator, изменение текстур для каждого 
 Имеет две кнопки: 
 
 > Add - открывает окно добавления объекта
+> 
 > Remove - удаление выбранного объекта
 
 Сверху есть 3 селектора при наведеннии на которых откроется выбор:
 1. `File`
-1.1 `New project` - удаляет ВООБЩЕ всё из программы, рекомендуется вначале сохранить проект, а после использовать эту кнопку
-1.2 `Load project` - загружает проект из файла
-1.3 `Save project` - сохраняет проект в файл
-1.4 `Check project` - проверяет открытый проект на наличие ошибок, а также недочётов. Список всех возможных сообщений: 
+
+    1.1 `New project` - удаляет ВООБЩЕ всё из программы, рекомендуется вначале сохранить проект, а после использовать эту кнопку
+   
+    1.2 `Load project` - загружает проект из файла
+   
+    1.3 `Save project` - сохраняет проект в файл
+   
+    1.4 `Check project` - проверяет открытый проект на наличие ошибок, а также недочётов. Список всех возможных сообщений:
+
     Ошибки - то, что помешает экспорту в DayZ мод:
+   
         `Invalid type` - Не поддерживаемый программой тип объекта или тип медиа
+   
         `Invalid name` - Не поддерживаемое название объекта
+   
         `File doesn't exist!` - Файл указанный в объекте не существует
+   
         `Media isn't a playlist but have a list of paths!` - В объекте Media указано, что оно является одиночной песней, хотя имеет список песен.
+   
         `Media object doesn't exist!` - В объекте указан объект медиа, который не найден в проекте
+   
         `Texture object doesn't exist!` - В объекте указан объект текстуры, который не найден в проекте
+   
     Предупреждения - то, что не помешает экспорту, но может его 'подпортить':
+   
         `The media is not used!` - Объект медиа, не используется не в одном из объектов
+   
         `The texture is not used!` - Объект текстур, не используется не в одном из объектов
+   
         `A recurring media file!` - Файл использующиеся в объекте медиа, используется в нескольких объектах
+   
         `A recurring texture file!` - Файл использующиеся в объекте текстур, используется в нескольких объектах
-1.5 `Export as DayZ mod` - Экспорт в мод готовый для выкладывания в Steam или для добавления на сервер. При выборе этого параметра требуется выбрать папку, которая после будет преобразована в мод. ВНИМАНИЕ! УЧТИТЕ, ЧТО ВЫБИРАТЬ НУЖНО ПУСТУЮ ПАПКУ, И ИМЕННА **ПАПКА** СТАНЕТ МОДОМ. ЕСЛИ ПАПКА НЕ ПУСТА ФАЙЛЫ БУДУТ УДАЛЕНЫ! (Конечно, если пользователь этого захочет :) )
-1.6 `Export without PBO` - Требуется для проверки мода, экспортирует по аналогии с пунктом с `Export as DayZ mod`, но не упаковывает в PBO (Учтите, что данный режим работы более **багованный** и часто выдаёт ошибки и недочёты, так, что рекомендуется, только для продвинутых пользователей)
-1.7 `Import Mod` - WIP
+   
+    1.5 `Export as DayZ mod` - Экспорт в мод готовый для выкладывания в Steam или для добавления на сервер. При выборе этого параметра требуется выбрать папку, которая после будет преобразована в мод. ВНИМАНИЕ! УЧТИТЕ, ЧТО ВЫБИРАТЬ НУЖНО ПУСТУЮ ПАПКУ, И ИМЕННА **ПАПКА** СТАНЕТ МОДОМ. ЕСЛИ ПАПКА НЕ ПУСТА ФАЙЛЫ БУДУТ УДАЛЕНЫ! (Конечно, если пользователь этого захочет :) )
+   
+    1.6 `Export without PBO` - Требуется для проверки мода, экспортирует по аналогии с пунктом с `Export as DayZ mod`, но не упаковывает в PBO (Учтите, что данный режим работы более **багованный** и часто выдаёт ошибки и недочёты, так, что рекомендуется, только для продвинутых пользователей)
+   
+    1.7 `Import Mod` - WIP
+   
 2. `Edit`
-2.1 `Import Media` - Открывает окно для добавления объекта медиа
-2.2 `Import Texture` - Открывает окно для добавления объекта текстур
-2.3 `Edit Media` - Открывает окно для редактирования объектов медиа
-2.4 `Edit Texture` - Открывает окно для редактирования объекта текстур
+   
+    2.1 `Import Media` - Открывает окно для добавления объекта медиа
+   
+    2.2 `Import Texture` - Открывает окно для добавления объекта текстур
+   
+    2.3 `Edit Media` - Открывает окно для редактирования объектов медиа
+   
+    2.4 `Edit Texture` - Открывает окно для редактирования объекта текстур
+   
 3. `Settings` - Открывает настройки
 
 ### Окно добавления объекта 
 Чек боксы сверху - выбор типа объекта, если выбрать больше одного, будет созданы копии объекта с разными типами. Например: Cassette Object - создаст кассету, а выбор CD и Cassette object создаст два объекта, один CD, и другой Cassette.
+
 Селектор медиа, нужен для выбора привязанного объекта медиа, если выбрать `Add New` открывает окно добавления объекта медиа
+
 Кнопка Okay закроет окно и создаст объекты, кнопка Cancel, закроет окно, но без создания объектов
+
 
 ### Окно редактирования объекта
 Для открытия объекта для редактирования, дважды нажмите на нужный объект.
@@ -173,6 +281,7 @@ TG - Texture Generator, изменение текстур для каждого 
 
 ### Окно добавления объекта медиа
 В поле для текста можно написать путь к файлу, либо же нажав на кнопку в виде папки, открыть окно для выбора файлов медиа.
+
 Если вы хотите создать плейлист, поставьте галочку в `Playlist`, учтите, что для создания плей листов, нужно выбрать несколько файлов! Если же вы выделете множество файлов, но не нажмёте на `Playlist`, то будет создано множество media файлов для каждого из файлов
 
 ### Окно добавления текстур
@@ -200,12 +309,19 @@ TG - Texture Generator, изменение текстур для каждого 
 
 Поле — это объект размещаемой на текстуре по средством выделения двух крайних точек. 
 1. Параметр — Это пустое поле для текста, сюда нужно вписать, то, что должно быть в поле. C `/` начинается команда для вставки, а параметры между двумя `%` обозначает placeholder
-1.1 `/sticker` - Устанавливает изображение, обрезанное по кругу привязанное к медиа, установленное для объекта, для которого создаётся текстура 
-1.2 `%name%` - Имя media
-1.3 `%album%` - Aльбом media
-1.4 `%artist%` - Исполнитель media
-1.5 `%author%` - Такой же как %artist%
-1.6 `%objectname%` - Имя объекта
+
+    1.1 `/sticker` - Устанавливает изображение, обрезанное по кругу привязанное к медиа, установленное для объекта, для которого создаётся текстура
+   
+    1.2 `%name%` - Имя media
+   
+    1.3 `%album%` - Aльбом media
+   
+    1.4 `%artist%` - Исполнитель media
+   
+    1.5 `%author%` - Такой же как %artist%
+   
+    1.6 `%objectname%` - Имя объекта
+   
 2. Две кнопки для установки крайних точек. Нажимаете на кнопку, а после жмёте на нужное вам место на текстуре. И как бы это не было контр-интуитивно, но точку 2 рекомендуется ставить снизу справа, а точку 1 слева сверху
 3. `Rotation` — Это выбор под каким углом, будет расположен вставляемый объект (Применяется для в основном для текста)
 4. `-` - Удаление поля
