@@ -79,7 +79,7 @@ There are 3 selectors at the top of the window:
    
     1.5 `Export as DayZ mod` - Export to a mod ready to be uploaded to Steam or added to the server. When selecting this option requires you to select a folder that will be converted into a mod. ATTENTION! NOTE THAT YOU MUST SELECT AN EMPTY FOLDER, AND THE **FOLDER** WILL BECOME A MOD. IF THE FOLDER IS NOT EMPTY, THE FILES WILL BE DELETED! (Of course, if the user wants to :) )
    
-    1.6 `Export without PBO` - Required to test the mod, exports similar to the item with `Export as DayZ mod`, but does not pack to PBO (Note that this mode of operation is more **buggy** and often gives errors and bugs, so it is recommended, only for advanced users).
+    1.6 `Export without PBO` - Required to test the mod, exports similar to the item with `Export as DayZ mod`, but does not pack to PBO (Pack in `.zip`).
    
     1.7 `Import Mod` - WIP
    
