@@ -35,30 +35,54 @@ TG - Texture Generator, изменение текстур для каждого 
 
 Сверху есть 3 селектора при наведеннии на которых откроется выбор:
 1. `File`
+
 1.1 `New project` - удаляет ВООБЩЕ всё из программы, рекомендуется вначале сохранить проект, а после использовать эту кнопку
+
 1.2 `Load project` - загружает проект из файла
+
 1.3 `Save project` - сохраняет проект в файл
+
 1.4 `Check project` - проверяет открытый проект на наличие ошибок, а также недочётов. Список всех возможных сообщений: 
-    Ошибки - то, что помешает экспорту в DayZ мод:
-        `Invalid type` - Не поддерживаемый программой тип объекта или тип медиа
-        `Invalid name` - Не поддерживаемое название объекта
-        `File doesn't exist!` - Файл указанный в объекте не существует
-        `Media isn't a playlist but have a list of paths!` - В объекте Media указано, что оно является одиночной песней, хотя имеет список песен.
-        `Media object doesn't exist!` - В объекте указан объект медиа, который не найден в проекте
-        `Texture object doesn't exist!` - В объекте указан объект текстуры, который не найден в проекте
-    Предупреждения - то, что не помешает экспорту, но может его 'подпортить':
-        `The media is not used!` - Объект медиа, не используется не в одном из объектов
-        `The texture is not used!` - Объект текстур, не используется не в одном из объектов
-        `A recurring media file!` - Файл использующиеся в объекте медиа, используется в нескольких объектах
-        `A recurring texture file!` - Файл использующиеся в объекте текстур, используется в нескольких объектах
+
+Ошибки - то, что помешает экспорту в DayZ мод:
+`Invalid type` - Не поддерживаемый программой тип объекта или тип медиа
+
+`Invalid name` - Не поддерживаемое название объекта
+        
+`File doesn't exist!` - Файл указанный в объекте не существует
+        
+`Media isn't a playlist but have a list of paths!` - В объекте Media указано, что оно является одиночной песней, хотя имеет список песен.
+        
+`Media object doesn't exist!` - В объекте указан объект медиа, который не найден в проекте
+        
+`Texture object doesn't exist!` - В объекте указан объект текстуры, который не найден в проекте
+
+Предупреждения - то, что не помешает экспорту, но может его 'подпортить':
+        
+`The media is not used!` - Объект медиа, не используется не в одном из объектов
+        
+`The texture is not used!` - Объект текстур, не используется не в одном из объектов
+        
+`A recurring media file!` - Файл использующиеся в объекте медиа, используется в нескольких объектах
+        
+`A recurring texture file!` - Файл использующиеся в объекте текстур, используется в нескольких объектах
+
 1.5 `Export as DayZ mod` - Экспорт в мод готовый для выкладывания в Steam или для добавления на сервер. При выборе этого параметра требуется выбрать папку, которая после будет преобразована в мод. ВНИМАНИЕ! УЧТИТЕ, ЧТО ВЫБИРАТЬ НУЖНО ПУСТУЮ ПАПКУ, И ИМЕННА **ПАПКА** СТАНЕТ МОДОМ. ЕСЛИ ПАПКА НЕ ПУСТА ФАЙЛЫ БУДУТ УДАЛЕНЫ! (Конечно, если пользователь этого захочет :) )
+
 1.6 `Export without PBO` - Требуется для проверки мода, экспортирует по аналогии с пунктом с `Export as DayZ mod`, но не упаковывает в PBO (Учтите, что данный режим работы более **багованный** и часто выдаёт ошибки и недочёты, так, что рекомендуется, только для продвинутых пользователей)
+
 1.7 `Import Mod` - WIP
+
 2. `Edit`
+
 2.1 `Import Media` - Открывает окно для добавления объекта медиа
+
 2.2 `Import Texture` - Открывает окно для добавления объекта текстур
+
 2.3 `Edit Media` - Открывает окно для редактирования объектов медиа
+
 2.4 `Edit Texture` - Открывает окно для редактирования объекта текстур
+
 3. `Settings` - Открывает настройки
 
 ### Окно добавления объекта 
@@ -103,15 +127,25 @@ TG - Texture Generator, изменение текстур для каждого 
 5. `Save` - сохранения изменений
 
 Поле — это объект размещаемой на текстуре по средством выделения двух крайних точек. 
+
 1. Параметр — Это пустое поле для текста, сюда нужно вписать, то, что должно быть в поле. C `/` начинается команда для вставки, а параметры между двумя `%` обозначает placeholder
+
 1.1 `/sticker` - Устанавливает изображение, обрезанное по кругу привязанное к медиа, установленное для объекта, для которого создаётся текстура 
+
 1.2 `%name%` - Имя media
+
 1.3 `%album%` - Aльбом media
+
 1.4 `%artist%` - Исполнитель media
+
 1.5 `%author%` - Такой же как %artist%
+
 1.6 `%objectname%` - Имя объекта
+
 2. Две кнопки для установки крайних точек. Нажимаете на кнопку, а после жмёте на нужное вам место на текстуре. И как бы это не было контр-интуитивно, но точку 2 рекомендуется ставить снизу справа, а точку 1 слева сверху
+
 3. `Rotation` — Это выбор под каким углом, будет расположен вставляемый объект (Применяется для в основном для текста)
+
 4. `-` - Удаление поля
 
 ### Настройки
@@ -157,18 +191,57 @@ It has two buttons:
 > Add - opens the window to add an object
 > Remove - deletes the selected object
 
-At the top, there are 3 selectors, hovering over which will open a choice:
-1. `File`
-1.1 `New project` - completely removes everything from the program, it is recommended to create a backup of the project beforehand
-1.2 `Open project` - opens an existing project
-1.3 `Save project` - saves the current project
-1.4 `Save project as...` - saves the project under a different name
-2. `Objects` - object selector
-2.1 `Add object` - opens the window to add an object
-2.2 `Remove object` - removes the selected object
-3. `Help`
-3.1 `About` - information about the program
-3.2 `Check for updates` - checks for program updates
+1. `File`.
+
+1.1 `New project` - deletes everything from the programme, it is recommended to save the project first and use this button afterwards.
+
+1.2 `Load project` - loads project from file
+
+1.3 `Save project` - saves the project to a file
+
+1.4 `Check project` - checks open project for errors and defects. A list of all possible messages: 
+
+Errors - things that will prevent export to DayZ mod:
+
+`Invalid type` - Object type or media type not supported by the programme
+
+`Invalid name` - Unsupported object name
+        
+`File doesn't exist!` - The file specified in the object does not exist.
+        
+`Media isn't a playlist but has a list of paths!` - The Media object specifies that it is a single song, although it has a list of songs.
+        
+`Media object doesn't exist!` - The object specifies a media object that is not found in the project
+        
+`Texture object doesn't exist!` - The object specifies a texture object that is not found in the project
+
+Warnings - something that won't interfere with the export, but may ‘mess it up’:
+        
+`The media is not used!` - Media object, not used in any of the objects
+        
+`The texture is not used!` - Texture object, not used in any of the objects.
+        
+`A recurring media file!` - A file used in a media object, used in multiple objects
+        
+`A recurring texture file!` - File used in texture object, used in multiple objects
+
+1.5 `Export as DayZ mod` - Export to a mod ready to be uploaded to Steam or added to the server. When selecting this option requires you to select a folder that will be converted into a mod. ATTENTION! NOTE THAT YOU MUST SELECT AN EMPTY FOLDER, AND THE **FOLDER** WILL BECOME A MOD. IF THE FOLDER IS NOT EMPTY, THE FILES WILL BE DELETED! (Of course, if the user wants it :) )
+
+1.6 `Export without PBO` - Required to test the mod, exports similarly to `Export as DayZ mod`, but does not pack to PBO (Note that this mode is more **buggy** and often gives errors and bugs, so it is recommended only for advanced users).
+
+1.7 `Import Mod` - WIP
+
+2. `Edit`.
+
+2.1 `Import Media` - Opens a window to add a media object.
+
+2.2 `Import Texture` - Opens a window for adding a texture object
+
+2.3 `Edit Media` - Opens a window for editing media objects
+
+2.4 `Edit Texture` - Opens a window for editing a texture object
+
+3. `Settings` - Opens the settings window
 
 ### Adding an Object
 A window opens with fields for object information:
@@ -200,12 +273,19 @@ Starts with a window to select an object for editing, similar to the media editi
 
 Field — an object placed on the texture by selecting two extreme points.
 1. Parameter — This is an empty text field where you need to enter what should be in the field. Commands start with `/`, and parameters between two `%` denote placeholders
+
 1.1 `/sticker` - Sets an image cropped in a circle associated with the media set for the object the texture is created for
+
 1.2 `%name%` - Media name
+
 1.3 `%album%` - Media album
+
 1.4 `%artist%` - Media artist
+
 1.5 `%author%` - Same as %artist%
+
 1.6 `%objectname%` - Object name
+
 2. Two buttons to set extreme points. Click the button, then click on the desired place on the texture. Although it may seem counterintuitive, it's recommended to set point 2 at the bottom right and point 1 at the top left
 3. `Rotation` — Angle at which the inserted object will be placed (mainly used for text)
 4. `-` - Deletes the field
