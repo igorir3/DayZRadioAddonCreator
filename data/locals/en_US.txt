@@ -1,0 +1,93 @@
+ARE YOU SURE?
+Your project has not been saved.\nWould you like to save it now?
+Select Directory
+Error
+DayZTools is not installed or is not set in the settings
+There are files in the folder where you are trying to install the mod! If you continue they will be deleted
+A mod with that name already exists! If you continue, it will be deleted!
+There are no objects in the project that can be exported!
+Close the program that is using crash.txt
+The file is currently in use by another program. Please close the program that is using the crash file
+An error has been detected! Report the error to the Fox group by sending a screenshot of the error and/or a file crash.txt
+Press Enter for exit...
+Due to Google's policy towards the Russian people, the function of installing audio through links cannot be implemented
+Error
+Number of warnings: 
+Number of errors: 
+No errors! ^-^
+Invalid type! 
+Invalid name! 
+File doesn't exist! 
+Media isn't a playlist but have a list of paths! 
+Media object doesn't exist! 
+Texture object doesn't exist! 
+The media is not used! 
+The texture is not used! 
+A recurring media file! 
+A recurring texture file! 
+In the 'Number of subprocesses' field, please enter a number.
+DayZTools Bin folder not found
+The 'DayZTools' program is not working correctly!\nSome of the necessary files for the program are missing or corrupted.\nPlease check the following files:
+Playlist question
+Playlist mode is currently disabled. Clicking on the button will automatically turn it on!
+Do you want to create a playlist with just one song?\nIf you select 'Yes', the program will remember your choice, otherwise the playlist for this media will be disabled!
+No images found!
+Number of linked images: 
+Rotation:
+Set Point 1
+Set Point 2
+Texture Editor
+Name
+Path
+Save
+Edit Texture
+Media Editor
+Is playlist?
+Album
+Artist
+Media images
+Description
+Edit media
+Settings
+Local
+Number of subprocesses
+Path to DayZTools
+Select DayZTools folder
+Checking window
+Close
+Add Image
+Add
+Path
+Add Media
+Path to the file
+File not found!
+Add Object
+CD Object
+Cassette Object
+Add New
+Media
+Okay
+Cancel
+Object Editor
+Desc
+File
+Texture
+Load Progress
+Save Progress
+Cassettes Editor
+Remove
+New Project
+Load Project
+Check Project
+Save Project
+Export as DayZ mod
+Export without PBO
+Import mod
+Import Media
+Import Texture
+Edit Textures
+The playlist consists of the following songs: 
+And more 
+The song 
+ of the album 
+ under the authorship 
