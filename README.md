@@ -4,9 +4,13 @@
 
 ### Словарь
 TG - Texture Generator, изменение текстур для каждого объекта за счёт алгоритма (Используется при экспорте)
+
 Медиа файл - файл `.mp3` или `.ogg`
+
 Объект - объект, который после будет экспортирован как предмет
+
 Медиа объект - объект, что может быть использован в других объектах, за счёт него работает TG, а также создаются SoundSet-ы и SoundShader-ы
+
 Объект Текстур - объект для TG, а также привязывается к каждому из объектов
 
 ### Установка:
@@ -162,9 +166,13 @@ This program is an editor for creating mods-addons for the Fox's Radio mod for D
 
 ### Glossary
 TG - Texture Generator, changes textures for each object using an algorithm (used during export)
+
 Media file - a `.mp3` or `.ogg` file
+
 Object - an object that will be exported as an item
+
 Media object - an object that can be used in other objects; it works with TG and is used to create SoundSets and SoundShaders
+
 Texture Object - an object for TG, also attached to each of the objects
 
 ### Installation:
